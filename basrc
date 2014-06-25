@@ -1,0 +1,15 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+PATH=/home/brainwave/bin:$PATH
+alias ls='ls --color=auto'
+alias use='sudo pacman -S'
+alias search='pacman -Ss'
+alias reposync='sudo pacman -Syy'
+alias pacupgrade='sudo pacman -Syu'
+alias throwaway='sudo pacman -Rns'
+alias cc='clang'
+PS1='[\u@\h \W]\$ '
